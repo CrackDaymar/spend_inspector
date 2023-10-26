@@ -221,16 +221,9 @@ def get_users_category_summary_in_this_month():
 
 
 def day_in_current_month():
-    # Получите текущую дату
     current_date = datetime.datetime.now()
-
-    # Извлеките текущий месяц из даты
     current_month = current_date.month
-
-    # Извлеките текущий год из даты
     current_year = current_date.year
-
-    # Используйте функцию monthrange из модуля calendar
     _, num_days = calendar.monthrange(current_year, current_month)
 
     return num_days
